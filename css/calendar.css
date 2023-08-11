@@ -1,0 +1,135 @@
+.calendar-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-page-container .btn {
+    background-color: none;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+}
+
+.calendar-year-and-month {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 10%;
+    width: 100%;
+}
+
+.calendar-ym-position {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.calendar-year {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.calendar-month {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.calendar-ym-text {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.calendar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    border-right: 5px solid rgb(180, 112, 67);
+    border-left: 5px solid rgb(180, 112, 67);
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.calendar-button {
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(245,221,187); 
+}
+
+.calendar-button:hover {
+    text-shadow: 0px 0px 50px yellow;
+}
+
+.calendar-button:active {
+    text-shadow: 0px 0px 50px rgb(180, 112, 67);
+}
+
+.calendar-main {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 80%;
+    height: 85%;
+    background-color: white;
+    border: 3px solid rgb(180, 112, 67);
+    background-color: rgb(173,216,230);
+}
+
+.calendar-main thead {
+    background-color: rgb(140, 202, 223);
+} th {
+    border: 1px solid black;
+}
+
+.calendar-table {
+    width: 100%;
+}
+
+.calendar-sunday {
+    color: red;
+}
+
+.calendar-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;  
+    table-layout: fixed;
+    word-break: break-all;
+}tbody td, tfoot td{
+    border: 1px solid black;
+    padding: 5px 5px;
+    height: 90px;
+    overflow: auto;
+    white-space: nowrap;
+    table-layout: fixed;
+    word-break: break-all;
+}td::-webkit-scrollbar {
+    height: 7px;
+}td::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 3px;
+}.calendar-table p {
+    display: flex;
+    margin-top: 10px;
+    padding: 0px 0px 0px 3px ;
+    border-left :  3px solid yellow;    
+}
+
